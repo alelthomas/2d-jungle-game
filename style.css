@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcements {
+    position: absolute;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.healthbar {
+    position: absolute;
+    padding: 20px 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.left-healthbar-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    width: 100%;
+}
+
+.left-healthbar {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 3px 3px white, -3px -3px white, 3px -3px white, -3px 3px white;
+}
+
+.left-healthbar-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /*background-color: #9cb542;
+    opacity: 0.4;*/
+    background: linear-gradient(180deg, rgba(24, 255, 20, 1) 25%, rgba(5, 84, 0, 1) 93%, rgba(24, 255, 20, 1) 100%);
+
+}
+
+.timer {
+    background-color: #182b38;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px white, -3px -3px white, 3px -3px white, -3px 3px white;
+    height: 60px;
+    width: 80px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.right-healthbar-container {
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.right-healthbar {
+    height: 40px;
+    background-color: transparent;
+    box-shadow: 3px 3px white, -3px -3px white, 3px -3px white, -3px 3px white;
+}
+
+.right-healthbar-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(24, 255, 20, 1) 25%, rgba(5, 84, 0, 1) 93%, rgba(24, 255, 20, 1) 100%);
+}
